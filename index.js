@@ -15,13 +15,13 @@ internals.getStateCode = function () {
 };
 
 internals.formatUser = function (user) {
-    // Format user data to give it a more realistic US look.
     const id = user.id;
 
     const fullName = user.name.split(' ');
     const firstName = fullName[0];
     const lastName = fullName[1];
 
+    // Adjust address to give it a US look.
     const fullAddress = user.address.split(',');
     const originalAddressLine1 = fullAddress[0].split(' ');
     const addressLine1 = `${originalAddressLine1[2]} ${originalAddressLine1[0]} ${originalAddressLine1[1]}`;
@@ -29,6 +29,7 @@ internals.formatUser = function (user) {
     const stateProvince = internals.getStateCode();
     const postalCode = fullAddress[3];
 
+    // Make email match name.
     const originalEmail = user.email.split('@');
     const email = `${firstName}.${lastName}@${originalEmail[1]}`.toLowerCase();
 
