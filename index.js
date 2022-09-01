@@ -46,8 +46,8 @@ internals.formatUser = function (user) {
 };
 
 internals.writeUser = async function (formattedUser) {
-    const text = `INSERT INTO "User--System"
-("Id", "FirstName", "LastName", "AddressLine1", "City", "StateProvince", "PostalCode", "Email")
+    const text = `INSERT INTO user__system
+(id, first_name, last_name, address_line1, city, state_province, postal_code, email)
 VALUES
 ($1, $2, $3, $4, $5, $6, $7, $8)`;
 
