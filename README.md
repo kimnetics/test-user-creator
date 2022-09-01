@@ -1,12 +1,12 @@
-# test-user-creator
+## test-user-creator
 
-## About
+### About
 
 This program loops through JetBrains Test Data generated user data and adds it to the User--System table in the configured database.
 
-## Configuration
+### Configuration
 
-### .env File
+#### .env File
 
 Create an .env file if one is not present.
 
@@ -20,7 +20,7 @@ PGUSER=''
 PGPASSWORD=''
 ```
 
-### Add user data
+#### Add user data
 
 Use the JetBrains Test Data generator to create user data. The code is set up to use the default structure of the Custom \ Multiple type.
 
