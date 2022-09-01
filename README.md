@@ -2,7 +2,7 @@
 
 ### About
 
-This program loops through JetBrains Test Data generated user data and adds it to the User--System table in the configured database.
+This program loops through JetBrains Test Data generated user data and adds it to the user__system table in the configured database.
 
 ### Configuration
 
