@@ -2,11 +2,11 @@
 // https://plugins.jetbrains.com/plugin/16873-test-data
 exports.list =
 [
-{
-    "n": "1",
-    "id": "3357c7dd-ba77-412e-94b4-bc03d3dc3f99",
-    "name": "Bevan Bias",
-    "address": "Letters St 3946, Helendale, Man, 430387",
-    "birthDate": "10.04.1986",
-    "email": "danyella_kindlejr@certain.id"
-}]
+  {
+    n: '1',
+    id: '3357c7dd-ba77-412e-94b4-bc03d3dc3f99',
+    name: 'Bevan Bias',
+    address: 'Letters St 3946, Helendale, Man, 430387',
+    birthDate: '10.04.1986',
+    email: 'danyella_kindlejr@certain.id'
+  }]
