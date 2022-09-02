@@ -1,5 +1,3 @@
-'use strict'
-
 require('dotenv').config()
 
 const StateCodes = require('./data/state-codes.js')
