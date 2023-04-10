@@ -79,7 +79,7 @@ PGPASSWORD=''
 4. Click the `+` sign.
 5. Give your generator a name and choose the `Multiple` type.
 
-The default values for the `Multiple` type is what the application expects.
+The default values for the `Multiple` type produces output in the format that the application expects.
 
 ## Using the Application
 
