@@ -1,12 +1,12 @@
 # Test User Creator
 
-A Node.js command line application to help you load test user data into a table. This application is useful when you need to have a large quantity of reasonably realistic looking data. I used this application to load a million records into a Postgres database.
+A Node.js command line application to help you load test user data into a table. This application is useful for when you need to have a large quantity of reasonably realistic looking user data. I used this application to load a million records into a Postgres database.
 
 The application leverages the JetBrains Test Data plugin to do the heavy lifting of generating the initial data. The application loops through the generated user data, cleans it up a bit and adds it to a table in a configured Postgres database.
 
 The application formats the address with a US look. It also makes the email address match the user's name.
 
-It should be straight forward to adjust the code to use a different data store type if you wish to use something other than Postgres.
+It should be straightforward to adjust the code to use a different data store type if you wish to use something other than Postgres.
 
 ## Getting Started
 
@@ -61,13 +61,13 @@ Replace `user__system` in the /index.js file with the name of your Postgres tabl
 
 Create an .env file if one is not present.
 
-In the .env file, specify connection information for your Postgres database.
+In the .env file, specify the connection information for your Postgres database. Here are example settings:
 
 ```
-PGHOST=''
-PGDATABASE=''
+PGHOST='localhost'
+PGDATABASE='Test'
 PGPORT=5432
-PGUSER=''
+PGUSER='tester'
 PGPASSWORD=''
 ```
 
