@@ -4,7 +4,7 @@ A Node.js command line application to help you load test user data into a table.
 
 The application leverages the JetBrains Test Data plugin to do the heavy lifting of generating the initial data. The application loops through the generated user data, cleans it up a bit and adds it to a table in a configured Postgres database.
 
-The application formats the address with a US look. It also makes the email address match the user's name.
+The initially generated test data is a little wonky. The application formats the address with a US look. It also makes the email address match the user's name.
 
 It should be straightforward to adjust the code to use a different data store type if you wish to use something other than Postgres.
 
@@ -71,9 +71,7 @@ PGUSER='tester'
 PGPASSWORD=''
 ```
 
-## Using the Application
-
-### Configure Data Generator
+### Configure a Data Generator
 
 1. Open the data/users.js file.
 2. In the file, right click and select the `Generate Test Data` item.
@@ -82,6 +80,8 @@ PGPASSWORD=''
 5. Give your generator a name and choose the `Multiple` type.
 
 The default values for the `Multiple` type is what the application expects.
+
+## Using the Application
 
 ### Run Data Generator
 
